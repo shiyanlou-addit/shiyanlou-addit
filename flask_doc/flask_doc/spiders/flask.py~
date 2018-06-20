@@ -1,0 +1,11 @@
+# -*- coding: utf-8 -*-
+import scrapy
+
+
+class FlaskSpider(scrapy.Spider):
+    name = 'flask'
+    allowed_domains = ['http://flask.pocoo.org/docs/0.12/']
+    start_urls = ['http://http://flask.pocoo.org/docs/0.12//']
+
+    def parse(self, response):
+        pass
